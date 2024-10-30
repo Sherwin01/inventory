@@ -30,6 +30,7 @@
                 $database = "asianbudols";
                 
                 // Create connection
+                // hello
                 $conn = new mysqli($servername, $username, $password, $database);
                 
                 // Check connection
@@ -65,9 +66,6 @@
                 }
 
                 ?>
-                
-
-               
             </tbody>
         </table>
     </div>
