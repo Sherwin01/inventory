@@ -9,7 +9,7 @@
 <body>
     <div class="container my-5">
         <h2>List of Products</h2>
-        <a class="btn btn-outline-primary" href="/AsianBudols/create.php" role="Button">Add Product</a>
+        <a class="btn btn-outline-primary" href="/inventory/create.php" role="Button">Add Product</a>
         <br>
         <table class="table">
             <thead>
@@ -40,7 +40,7 @@
                 echo "Connected Successfully.";
 
                 // read all row from database table
-                $sql = "SELECT * FROM products";
+                $sql = "SELECT * FROM products ORDER BY product_id";
                 $result = $conn->query($sql);
 
                 if (!$result) {
@@ -48,21 +48,23 @@
                 }
                 
                 //read data of each row
+                $display_id = 1;
                 while($row = $result->fetch_assoc()) {
                     echo "
                 <tr>
-                    <td>$row[product_id]</td>
+                    <td>$display_id</td>
                     <td>$row[name]</td>
                     <td>$row[description]</td>
                     <td>$row[price]</td>
                     <td>$row[stock]</td>
                     <td>$row[category_id]</td> 
                     <td>
-                        <a class='btn btn-outline-warning' href='/AsianBudols/edit.php?id=$row[product_id]' role='Button'>Edit</a>
-                        <a class='btn btn-outline-danger' href='/AsianBudols/delete.php?id=$row[product_id]' role='Button'>Delete</a>
+                        <a class='btn btn-outline-warning' href='/inventory/edit.php?id=$row[product_id]' role='Button'>Edit</a>
+                        <a class='btn btn-outline-danger' href='/inventory/delete.php?id=$row[product_id]' role='Button'>Delete</a>
                     </td>
                 </tr>
                     ";
+                    $display_id++;
                 }
 
                 ?>

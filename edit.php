@@ -67,7 +67,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
 
         $successMessage = "Product updated successfully.";
-        header("location: /AsianBudols/index.php");
+        header("location: /inventory/index.php");
         exit;
 
     } while (false);
@@ -137,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     <button type="submit" class="btn btn-primary">Save</button>
                 </div>
                 <div class="col-sm-3 d-grid">
-                    <a class="btn btn-outline-primary" href="/AsianBudols/index.php" role="button">Cancel</a>
+                    <a class="btn btn-outline-primary" href="/inventory/index.php" role="button">Cancel</a>
                 </div>
             </div>
         </form>
