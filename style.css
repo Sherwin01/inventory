@@ -4,15 +4,16 @@
 
 }
 
+/* Hero Section  */
 .hero-section {
 
     display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
-            color: #4A628A;
-            text-align: center;
-            padding: 0 20px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #4A628A;
+    text-align: center;
+    padding: 0 20px;
 
 }
 
@@ -55,4 +56,153 @@
 
     background-color: #7AB2D3;
 
+}
+
+/* trending products */
+
+.trending-products {
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #4A628A;
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+.trending-products-title {
+
+    font-size: 2rem;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.trending-products-subtitle {
+
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
+/* New update */
+
+.new-updates {
+
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    color: #4A628A;
+    text-align: center;
+    padding: 0 20px;
+
+}
+
+.new-updates-title {
+
+    font-size: 2rem;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.new-updates-subtitle {
+
+    font-size: 1rem;
+    margin-bottom: 20px;
+
+}
+
+/* contact-section */
+
+.contact-content {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px, auto));
+    gap: 5px;
+
+}
+
+.first-info {
+
+    height: auto;
+    margin-left: 100px;
+    margin-bottom: 100px;
+    
+}
+
+.first-info p{
+
+    color: #4A628A;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    
+}
+
+.second-info h4 {
+
+    color: #4A628A;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.second-info p{
+
+    color: #4A628A;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.third-info h4 {
+
+    color: #4A628A;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+}
+
+.third-info p{
+
+    color: #4A628A;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all .4s;
+}
+
+.contact-content p:hover {
+    color: #7AB2D3;
+}
+
+.social-icon i{
+
+    color: #4A628A;
+    margin-right: 10px;
+    font-size: 20px;
+    transition: all .42s;
+}
+
+.social-icon i:hover {
+    transform: scale(1.3);
+}
+
+.end-text {
+    text-align: center;
+    padding: 20px;
 }
