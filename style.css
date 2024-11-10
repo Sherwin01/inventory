@@ -1,4 +1,58 @@
 .custom-background {
+
     background-color: #DFF2EB;
+
 }
 
+.hero-section {
+
+    display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #4A628A;
+            text-align: center;
+            padding: 0 20px;
+
+}
+
+.hero-content {
+
+    max-width: 800px;
+
+}
+
+.hero-title {
+
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+
+}
+
+.hero-subtitle {
+
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+
+}
+
+.hero-btn {
+
+    display: inline-block;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #eeeff1;
+    background-color: #4A628A;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+
+}
+
+.hero-btn:hover {
+
+    background-color: #7AB2D3;
+
+}
